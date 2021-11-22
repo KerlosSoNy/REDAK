@@ -1,0 +1,73 @@
+/* Mobile Screen */
+
+@media (max-width:767px){
+    body{
+        margin:             0px;
+        padding:            0px; 
+
+        background-size:    cover;
+        background-repeat:  repeat;
+    }
+    /*  */
+    /*  */
+    .signup , .login{
+        left:               82%;
+    }
+
+    .signup img, .login img{
+        width :             35px;
+        height:             35px;
+    }
+    /*  */
+    /*  */
+    .header1{
+        position: relative;
+
+        grid-template-areas: "logo logo";
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 100px;
+    }
+    .lidoc , .lihos ,.lipat {
+        display: none;
+    }
+    /*  */
+    /*  */
+    .mob_header{
+        position: fixed;
+        display: grid;
+
+
+        width: 100%;
+        height: 50px;
+
+        grid-template-areas: "doc pat hos";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px;
+
+        justify-items: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    .Mob_lidoc , .Mob_lipat ,.Mob_lihos {
+        color:            rgb(189, 189, 189);
+        text-decoration:    none;
+        font-size:          18px;
+        font-family:        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+        border-bottom:      1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .Mob_lidoc{
+        grid-area: doc;
+    }
+
+    .Mob_lipat{
+        grid-area: pat;
+    }
+
+    .Mob_lihos{
+        grid-area: hos;
+    }
+
+}
