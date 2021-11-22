@@ -1,6 +1,12 @@
 /* Mobile Screen */
 
 @media (max-width:767px){
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
     body{
         margin:             0px;
         padding:            0px; 
@@ -15,6 +21,11 @@
     .signup , .login{
         position: fixed;
         left:               82%;
+        width :             35px;
+        height:             35px;
+        border-radius:      17.5px;
+        z-index: 8;
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .signup img, .login img{
@@ -79,5 +90,59 @@
     .Mob_lihos{
         grid-area: hos;
     }
+    /*  */
+    /*  */
 
+    .about_us{
+        position:               relative;
+        padding:                0px;
+        padding-top:            30px;
+        width:                  100%;
+        height:                 590px;
+
+        background-color:       rgba(0, 0, 0, 0.25);
+
+        display:                grid;
+        grid-template-areas:    "img" "h3" "p";
+        grid-template-columns:  repeat(1,1fr);
+        grid-template-rows:     repeat(2,1fr);
+        row-gap:                50px;
+    }
+
+    .about_us img{
+        filter:                 opacity(100%);
+        filter:                 brightness(90%);
+        border-radius:          0px;
+        width:                  100%;
+        height:                 200px;
+        grid-area:              img;
+    }
+    
+    .about_us h3{
+        color:                 #ff9970;
+        font-size:              24px;
+        font-weight:            500;
+        margin-top:             -60px;
+        grid-area:              h3;
+    }
+    
+    .about_us p{
+        color:                rgb(253, 253, 253);
+    
+        font-size:              20px;
+        font-weight:            200;
+        line-height:            160%;
+    
+        margin-left:            20px;
+        grid-row: 3 / 4;
+        grid-area:              p;
+    }
+    .about_us p a{
+        font-size:              12px;
+        font-weight:            200;
+        text-decoration:        none;
+        color:                #ff9970;
+        margin-left:            0px;
+        padding-left:           260px;
+    }
 }
