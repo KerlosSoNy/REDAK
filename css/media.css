@@ -33,7 +33,7 @@
     /*  */
     /*  */
     .mob_header{
-        position: fixed;
+        position: relative;
         display: grid;
 
 
