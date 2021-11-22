@@ -7,10 +7,13 @@
 
         background-size:    cover;
         background-repeat:  repeat;
+
+        overflow: hidden;
     }
     /*  */
     /*  */
     .signup , .login{
+        position: fixed;
         left:               82%;
     }
 
@@ -26,14 +29,18 @@
         grid-template-areas: "logo logo";
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 100px;
+
     }
     .lidoc , .lihos ,.lipat {
         display: none;
     }
     /*  */
     /*  */
+
     .mob_header{
-        position: relative;
+        position: sticky;
+        top: 0;
+
         display: grid;
 
 
@@ -50,11 +57,14 @@
     }
 
     .Mob_lidoc , .Mob_lipat ,.Mob_lihos {
+        position: sticky;
+       
         color:            rgb(189, 189, 189);
         text-decoration:    none;
         font-size:          18px;
         font-family:        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
+        padding-bottom:     2px;
         border-bottom:      1px solid rgba(255, 255, 255, 0.2);
     }
 
