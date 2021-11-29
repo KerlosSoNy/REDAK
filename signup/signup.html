@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- READK TAP -->
+    <title>REDAK</title>
+    <link rel="icon" href="../pic/icons/logopage.png">
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=767, initial-scale=1.0">
+
+    <!-- CSS Style Sheets -->
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- js -->
+    <link rel=""   href=""  >
+</head>
+<body>
+    <div class="forma">
+        <h3>Sign Up For Patient</h3>
+        <form method="post" action="">
+            <div class="nu1">
+            <label for="gover" class="labels">Select Your Governorate</label>
+            <img class="iconlabel" src="" alt="">
+            <select class="selection" id="gover" name="gover" required>
+                <option disabled="" selected="" value="">Select</option>
+                <option value="Al Daqahliyah">Al Daqahliyah</option>
+                <option value="Al Bahr al Ahmar">Al Bahr al Ahmar</option>
+                <option value="Al Buhayrah">Al Buhayrah</option>
+                <option value="Al Fayyum">Al Fayyum</option>
+                <option value="Al Gharbiyah">Al Gharbiyah</option>
+                <option value="Al Iskandariyah">Al Iskandariyah</option>
+                <option value="Al Isma'iliyah">Al Isma'iliyah</option>
+                <option value="Al Minufiyah">Al Minufiyah</option>
+                <option value="Al Minya">Al Minya</option>
+                <option value="Al Qalyubiyah">Al Qalyubiyah</option>
+                <option value="Al Wadi al Jadid">Al Wadi al Jadid</option>
+                <option value="Ash Sharqiyah">Ash Sharqiyah</option>
+                <option value="As Suways">As Suways</option>
+                <option value="Aswan">Aswan</option>
+                <option value="Asyut">Asyut</option>
+                <option value="Bani Suwayf">Bani Suwayf</option>
+                <option value="Cairo">Cairo</option>
+                <option value="Dumyat">Dumyat</option>
+                <option value="Giza">Giza</option>
+                <option value="Janub Sina'">Janub Sina'</option>
+                <option value="Port Said">Port Said</option>
+                <option value="Kafr ash Shaykh">Kafr ash Shaykh</option>
+                <option value="Matruh">Matruh</option>
+                <option value="Qina">Qina</option>
+                <option value="Shamal Sina'">Shamal Sina'</option>
+                <option value="Suhaj">Suhaj</option>
+            </select>
+            </div>
+            
+            <div class="nu1">
+            <label class="labels">Select Your City</label>
+            <img class="iconlabel" src="" alt="">
+            <select class="selection" id="city" disabled name="city_name" required>
+                <option disabled selected value="">Select</option>
+            </select>
+            </div>
+
+            <div class="nu1">
+            <label class="labels"    for="address">Enter Your Address</label>
+            <img   class="iconlabel" src=""        alt="">
+            <input class="selection" id="address"  type="text" name="address" required>
+            </div>
+
+            <div class="nu2">
+            <label class="labels"    for="nationalid">National ID Number</label>
+            <img   class="iconlabel" src=""        alt="">
+            <input class="selection" type="tel"    name="Nationalid_number"      required       pattern="[0-9]{14}">
+            </div>
+
+            <div class="nu3">
+            <label class="labels"    for="mob_number">Mobile Number</label>
+            <img   class="iconlabel"   src=""      alt="">
+            <input class="selection" type="tel"    name="mobile_number" Value="2" required      pattern="[0-9]{12}">
+            </div>
+
+            <div class="nu6">
+                <label class="labels"    for="confPass">Email</label>
+                <img   class="iconlabel" src=""        alt="">
+                <input class="selection" type="email" id="confPass" required name="email"   required> 
+            </div>
+
+            <div class="nu7">
+                <label class="labels"    for="confPass">Confirm Email</label>
+                <img   class="iconlabel" src=""        alt="">
+                <input class="selection" type="email" id="confPass" required name="email"   required> 
+            </div>
+            
+            <div class="nu4">
+            <label class="labels"    for="Pass">Password</label>
+            <img   class="iconlabel" src=""        alt="">
+            <input class="selection" type="password" id="Pass"    required name="password"   required>
+            </div>
+
+            <div class="nu5">
+            <label class="labels"    for="confPass">Confirm Password</label>
+            <img   class="iconlabel" src=""        alt="">
+            <input class="selection" type="password" id="confPass" required name="password"   required>
+            </div>
+
+            <div   class="checkbox">
+            <input type= "checkbox">
+            <label class="respon">We are not responsible for entering any wrong information</label>
+            </div>
+
+            <input class="btt" type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>

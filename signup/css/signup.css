@@ -1,0 +1,90 @@
+*{
+    box-sizing:             border-box;
+    margin:                 0px;
+    padding:                0px;
+}
+
+body{
+    background-image:       url(../../pic/background/body_background.jpg);
+    background-repeat:      no-repeat;
+    background-size:        cover;
+
+    display:                grid;
+    justify-items:          center;
+}
+
+.forma{
+    position:               relative;
+
+
+    width:                  40%;
+
+    margin-top:             60px;
+
+    display:                grid;
+    justify-self:           center;
+    align-self:             center;
+
+    background-color:       rgba(0, 0, 0, 0.4);
+
+    border-radius:          30px;
+
+    align-content:          center;
+    justify-content:        center;
+
+    font-family:            Arial, Helvetica, sans-serif;
+}
+
+h3{
+    color:                  lavender;
+    margin:                 40px;
+    font-size:              48px;
+}
+
+.labels{
+    display:                block;
+    color:                  lavender;
+    font-size:              20px;
+}
+
+.selection{
+    border-radius:          5px;
+    margin:                 5px;
+
+    width:                  500px;
+    height:                 30px;
+
+    border:                 1px solid black;
+}
+
+.iconlabel{
+
+}
+
+.checkbox{
+    display:                block;
+    color:                  lavender;
+    margin:                 5px;
+    font-size:              16px;
+    position:               relative;
+    left:                   6%; 
+}
+
+.nu1 , .nu2 , .nu3 , .nu4 , .nu5 , .nu6 , .nu7{
+    margin-bottom:          20px;
+}
+
+.btt{
+    display:                block;
+    width:                  80px;
+    height:                 40px;
+
+    border-radius:          20px;
+    border:                 1px solid black;
+    box-shadow:             none;
+
+    margin:                 20px;
+
+    position:               relative;
+    left:                   38%;     
+}
