@@ -53,8 +53,9 @@ h3{
 
     width:                  500px;
     height:                 30px;
-
-    border:                 1px solid black;
+    box-shadow:             0px;
+    background-color:       rgba(255, 255, 255, 0.8);
+    border-bottom:          1px solid black;
 }
 
 .iconlabel{
@@ -80,11 +81,17 @@ h3{
     height:                 40px;
 
     border-radius:          20px;
-    border:                 1px solid black;
+    border:                 1px solid rgba(0, 0, 255, 0.8);
     box-shadow:             none;
 
     margin:                 20px;
 
     position:               relative;
-    left:                   38%;     
+    left:                   38%;   
+    background-color:       rgba(0, 0, 255, 0.8);  
+    color:                  lavender;
+}
+
+.btt:hover{
+    cursor: pointer;
 }

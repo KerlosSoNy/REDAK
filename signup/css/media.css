@@ -1,0 +1,36 @@
+@media (min-width: 600px){
+    *{
+        box-sizing:             border-box;
+        margin:                 0px;
+        padding:                0px;
+    }
+    
+    body{
+        background-image:       url(../../pic/background/body_background.jpg);
+        background-repeat:      repeat;
+        background-size:        cover;
+        display:                unset;
+        justify-items:          center;
+        overflow:               hidden;
+    }
+
+    .forma{
+        width: 375px;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .selection{
+        width: 355px;
+    }
+    .labels{
+        margin-left: 10px;
+    }
+
+    .checkbox{
+        left:2%;
+    }
+
+    .btt{
+        left: 35%;
+    }
+}
