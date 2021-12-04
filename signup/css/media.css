@@ -1,36 +1,68 @@
-@media (min-width: 600px){
-    *{
-        box-sizing:             border-box;
-        margin:                 0px;
-        padding:                0px;
+*{
+    box-sizing:             border-box;
+    margin:                 0px;
+    padding:                0px;
+}
+
+@media (max-width: 767px){
+    form {
+        position:           relative;
+        left:               0%;
+        max-height:         1400px;
+        min-height:         950px;
+        width:              100%;
+        
+        justify-content: start;
+        align-content: space-between;
+        
+        padding:0%;
+        margin-top: 0px;
+        border-radius: 0px;
     }
-    
-    body{
-        background-image:       url(../../pic/background/body_background.jpg);
-        background-repeat:      repeat;
-        background-size:        cover;
-        display:                unset;
-        justify-items:          center;
-        overflow:               hidden;
+    h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9{
+        display:            block;
+        margin-bottom:      28px;
     }
 
-    .forma{
-        width: 375px;
-        border-radius: 0px;
-        margin: 0px;
+    h3{
+        position:           relative;
+        left:               0%;
+        padding-left:       16%;
+        grid-row:           1;
+        margin-top:         40px;
+        font-size:          10vw;
     }
-    .selection{
-        width: 355px;
+
+    .lab{
+        font-size:          18px;
+        margin-left:        7px;
     }
-    .labels{
-        margin-left: 10px;
+
+    .sel{
+        width:              93vw;
+        height:             25px;
+        margin-left:        4%;
     }
 
     .checkbox{
-        left:2%;
+        left:               0%;
+        padding-left:       12vw;
     }
 
     .btt{
-        left: 35%;
+        left:               40vw;
+        margin-bottom:      30px;
+    }
+}
+
+@media (max-width: 400px){
+    .checkbox{
+        left:               0%;
+        padding-left:       7vw;
+    }
+
+    .btt{
+        left:               37.5vw;
+        margin-bottom:      30px;
     }
 }
