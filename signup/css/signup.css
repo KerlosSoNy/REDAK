@@ -5,7 +5,8 @@
 }
 
 body{
-    background-image:       url(../../pic/background/body_background.jpg);
+    background-image:       url(../../pic/background/body_background1.jpg);
+    filter: brightness(100%);
     background-size:        cover;
     background-repeat:      no-repeat;
 }
@@ -24,9 +25,9 @@ form{
     justify-content:        center;
     align-content:          space-between;
 
-    background-color:       rgba(0, 0, 0, 0.35);
+    background-color:       rgba(0, 0, 0, 0.85);
 
-    color:                  lavender;
+    color:                  white;
 
     padding:                50px;
     margin-top:             25px;
@@ -95,7 +96,7 @@ h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9{
 .lab{
     display:            block;
 
-    font-weight:        200;
+    font-weight:        100;
     font-size:          22px;
 
     margin-bottom:      10px;

@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:767px) {
+    body{
+        background-image: url(../../pic/background/body_background1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cont{
+        position: relative;
+        left: 0vw;
+        top: 0vh;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        background-color: rgba(0, 0, 0, 0.4);
+    
+        display: grid;
+        grid-template: repeat(2,1fr);
+        
+        border-radius: 0px;
+    
+        overflow: hidden;
+    }
+
+    .Patient{
+        grid-area: 1;
+        border-radius: 0px;
+        border-bottom: 1px ridge lavender;
+        border-right: 0px;
+    }
+    .doctor{
+        grid-area: 2;
+        border-radius: 0px;
+    }
+    
+    .doctor , .Patient{
+        position: relative;
+    
+        height: 100%;
+        width: 100%;
+    
+        background-color: rgba(0, 0, 0, 0.4);
+    
+        color: lavenderblush;
+        text-decoration: none;
+    
+        display: grid;
+    
+        align-content: center;
+        justify-content: center;
+    
+        transition-duration: 2.5s;
+
+        padding-bottom: 100px;
+    }
+    
+    .Patient h3 , .doctor h3{
+        font-size: 46px;
+    
+        position:relative;
+        top: 32vh;
+        left: 3.6vw;
+    
+    }
+    
+    .Patient img ,.doctor img {
+        height: 165px;
+        width: 165px;
+        margin-bottom: 0px;
+    }
+    
+    .Patient:hover ,.doctor:hover{
+        background-color: black;
+        padding-bottom: 0px;
+    }
+    
+}
+
+@media (max-width:321px) {
+    .doctor ,.Patient{
+        padding-bottom: 100px;
+    }
+
+    .Patient img ,.doctor img {
+        height: 120px;
+        width: 120px;
+        margin-bottom: 0px;
+    }
+
+    .Patient h3 , .doctor h3{
+        font-size: 30px;
+        top: 30vh;
+        left: 4.59vw;
+    }
+}
+
+@media only screen and (max-width: 412px) and (min-width: 322px){
+    .doctor ,.Patient{
+        padding-bottom: 100px;
+    }
+
+    .Patient img ,.doctor img {
+        height: 165px;
+        width: 165px;
+        margin-bottom: 0px;
+    }
+
+    .Patient h3 , .doctor h3{
+        font-size: 40px;
+        top: 30vh;
+        left: 6vw;
+    }
+}
+@media only screen and (max-height: 668px) and (min-height: 639px){
+    .Patient h3 , .doctor h3{
+        font-size: 40px;
+        top: 34vh;
+        left: 6vw;
+    }
+}
+

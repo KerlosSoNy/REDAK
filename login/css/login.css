@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(../../pic/background/body_background1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cont{
+    position: relative;
+    left: 35vw;
+    top: 25vh;
+
+    width: 30vw;
+    height: 50vh;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: grid;
+    grid-column: repeat(2,1fr);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.Patient{
+    grid-column: 1;
+
+    border-radius: 20px 0px 0px 20px;
+    border-right: 1px solid lavender;
+}
+
+.doctor{
+    grid-column: 2;
+
+    border-radius: 0px 20px 20px 0px;
+}
+
+.doctor , .Patient{
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: white;
+    text-decoration: none;
+
+    display: grid;
+
+    align-content: center;
+    justify-content: center;
+
+    transition-duration: 3s;
+}
+
+.Patient h3 , .doctor h3{
+    font-size: 46px;
+
+    position:relative;
+    top: 38.6vh;
+    left: 1vw;
+
+}
+
+.Patient img ,.doctor img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 50px;
+}
+
+.Patient:hover ,.doctor:hover{
+    background-color: black;
+    padding-bottom: 220px;
+}
