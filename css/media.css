@@ -25,13 +25,11 @@
         height:             35px;
         border-radius:      17.5px;
         z-index: 8;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 1);
+        text-decoration: none;
+        color: white;
     }
 
-    .signup img, .login img{
-        width :             35px;
-        height:             35px;
-    }
     /*  */
     /*  */
     .header1{
@@ -70,7 +68,7 @@
     .Mob_lidoc , .Mob_lipat ,.Mob_lihos {
         position: sticky;
        
-        color:            rgb(189, 189, 189);
+        color:            white;
         text-decoration:    none;
         font-size:          18px;
         font-family:        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -120,7 +118,7 @@
     }
     
     .about_us h3{
-        color:                 #ff9970;
+        color:                 black;
         font-size:              24px;
         font-weight:            500;
         margin-top:             -60px;
@@ -128,7 +126,7 @@
     }
     
     .about_us p{
-        color:                rgb(253, 253, 253);
+        color:                white;
     
         font-size:              20px;
         font-weight:            200;
@@ -142,7 +140,7 @@
         font-size:              12px;
         font-weight:            200;
         text-decoration:        none;
-        color:                #ff9970;
+        color:                black;
         margin-left:            0px;
         padding-left:           260px;
     }
