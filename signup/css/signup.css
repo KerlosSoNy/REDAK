@@ -15,13 +15,12 @@ form{
     position:               relative;
     left:                   25%;
 
-    max-height:             1400px;
-    min-height:             950px;
-
-    width:                  50%;
-
+    width:                  50vw;
+    min-height:             1400px;
+    max-height:             2200px;
     display:                grid;
-    grid-row:               repeat(12,1fr);
+    grid-row:               repeat(15,auto);
+
     justify-content:        center;
     align-content:          space-between;
 
@@ -37,9 +36,13 @@ form{
 
 h3{
     position:               relative;
-    left:                   20%;
+    left:                   0px;
+    right:                  0px;
 
     grid-row:               1;
+
+    margin-left:            auto;
+    margin-right:           auto;
 
     font-size:              38px;
 }
@@ -61,26 +64,45 @@ h3{
     grid-row:           9;
 }.nu9{
     grid-row:           10;
+}.nu10{
+    grid-row:           11;
+}.nu11{
+    grid-row:           12;
+}.nu12{
+    grid-row:           13;
 }
 
-h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9{
+.nu1 label{
+    display: inline-block;
+}.nu1 span{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9,.nu10,.nu11,.nu12{
     display:            block;
     margin-bottom:      40px;
 }
+
 .checkbox{
     position:           relative;
-    left:               10%;
+    left:               0px;
+    right:              0px;
 
     margin-top:         10px;
+    margin-right:       auto;
+    margin-left:        auto;
 
-    grid-row:           11;
+    grid-row:           14;
     font-size:          16px;
 }
 
 .btt{
     position:           relative;
-    left:               40%;
-    grid-row:           12;
+    left:               0px;
+    right:              0px;
+    grid-row:           15;
 
     width:              100px;
     height:             40px;
@@ -91,6 +113,8 @@ h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9{
     font-weight:        bold;
 
     margin-top:         30px;
+    margin-right:       auto;
+    margin-left:        auto;
 }
 
 .lab{
@@ -105,7 +129,7 @@ h3,.nu1, .nu2 ,.nu3,.nu4,.nu5,.nu6,.nu7,.nu8,.nu9{
 .sel{
     display:            block;
     
-    width:              500px;
+    width:              45vw;
     height:             30px;
 
     border-radius:      5px;

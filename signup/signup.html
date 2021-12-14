@@ -19,11 +19,30 @@
 <body>
             
 
-            <form method="post" action="">
+            <form method="post" action="" >
 
                 <h3>Sign Up For Patient</h3>
 
                 <div    class="nu1">
+                    <label class="lab"  for="user_name"> Your Name </label><span>'Qadrilateral'</span>
+                    <input class="sel"  type="text"  id="user_name"    name="userName" required>
+                </div>
+
+                <div    class="nu2">
+                    <label class="lab"  for="age">Your Age</label>
+                    <input class="sel"  type="number"  id="age" name="age" pattern="[0-9]" required>
+                </div>
+
+                <div    class="nu3">
+                    <label  class="lab" for="gender">Gender</label>
+                    <select class="sel" name="gender" id="genderUser" required>
+                        <option value="" selected="" disabled>Select</option>
+                        <option value="" >Male</option>
+                        <option value="" >Female</option>
+                    </select>
+                </div>
+
+                <div    class="nu4">
                     <label  class="lab"    for="gover" >Select Your Governorate</label>
                     <select class="sel"    id="gover" name="gover" required>
                     <option disabled="" selected="" value="">Select</option>
@@ -56,44 +75,44 @@
                 </select>
                 </div>
                 
-                <div    class="nu2">
+                <div    class="nu5">
                     <label  class="lab"      >Select Your City</label>
                     <select class="sel"     disabled name="city_name" required>
                     <option disabled        selected value="">Select</option>
                 </select>
                 </div>
 
-                <div    class="nu3">
+                <div    class="nu6">
                     <label  class="lab"    >Enter Your Address</label>
                     <input  class="sel"    type="text" name="address" required>
                 </div>
 
-                <div    class="nu4">
+                <div    class="nu7">
                     <label  class="lab"    >National ID Number</label>
                     <input  class="sel"    type="tel"    name="Nationalid_number"      required       pattern="[0-9]{14}">
                 </div>
 
-                <div    class="nu5">
+                <div    class="nu8">
                     <label  class="lab"    >Mobile Number</label>
-                    <input  class="sel"    type="tel"    name="mobile_number" Value="2" required      pattern="[0-9]{12}">
+                    <input  class="sel"    type="tel"    name="mobile_number" required      pattern="[0-9]{11}">
                 </div>
 
-                <div    class="nu6">
+                <div    class="nu9">
                     <label class="lab"     >Email</label>
                     <input class="sel"     type="email" id="confPass" required name="email"   required> 
                 </div>
 
-                <div    class="nu7">
+                <div    class="nu10">
                     <label class="lab"     >Confirm Email</label>
                     <input class="sel"     type="email" id="confPass" required name="email"   required> 
                 </div>
                 
-                <div    class="nu8">
+                <div    class="nu11">
                     <label class="lab"     >Password</label>
                     <input class="sel"     type="password" id="Pass"    required name="password"   required>
                 </div>
 
-                <div    class="nu9">
+                <div    class="nu12">
                     <label class="lab"     >Confirm Password</label>
                     <input class="sel"     type="password" id="confPass" required name="password"   required>
                 </div>

@@ -25,9 +25,13 @@
 
     h3{
         position:           relative;
-        left:               0%;
-        padding-left:       16%;
+        left:               0px;
+        right:              0px;
+        margin-right:       auto;
+        margin-left:        auto;
+
         grid-row:           1;
+        
         margin-top:         40px;
         font-size:          10vw;
     }
@@ -45,11 +49,11 @@
 
     .checkbox{
         left:               0%;
-        padding-left:       12vw;
+        padding-left:       2vw;
     }
 
     .btt{
-        left:               40vw;
+        left:               2.5vw;
         margin-bottom:      30px;
     }
 }
@@ -61,7 +65,7 @@
     }
 
     .btt{
-        left:               37.5vw;
+        left:               2vw;
         margin-bottom:      30px;
     }
 }
