@@ -1,10 +1,10 @@
 body{
     margin:             0%;
     padding:            0%;
-    background-image:   url(../pic/background/body_background1.jpg);
+    /* background-image:   url(../pic/background/body_background1.jpg);
     background-repeat:  no-repeat;
-    background-size:    cover;
-
+    background-size:    cover; */
+    background-color: #f0f4f5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 *{
@@ -21,10 +21,10 @@ body{
 
     position:           fixed;
     top:                90%;
-    left:               95%;
+    left:               96.5%;
 
-    width:              65px;
-    height:             65px;
+    width:              60px;
+    height:             60px;
 
     background-color:   transparent;
 
@@ -67,13 +67,13 @@ body{
 
             /*  Start Of The Page Menu */
 .header1{
-    position:           sticky;
+    position:fixed;
     
     display:            grid;
     width:              100%;
     height:             80px;
 
-    background-color: rgba(0, 0, 0,1);
+    background-color: #17364b;
 
     grid-template-areas: "logo logo space2 space3 space4 doc pat hos";
     grid-template-columns: repeat(8,1fr);
@@ -81,6 +81,8 @@ body{
 
     justify-items:      center;
     align-items:        center;
+
+    z-index: 150;
 }
 
 .logo_of_header{
@@ -107,12 +109,12 @@ body{
 .lidoc , .lihos ,.lipat {
     margin-top:         -25px;
 
-    color:            rgb(255, 255, 255);
+    color:            #DDDDDD;
     text-decoration:    none;
     font-size:          28px;
     font-family:        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-    border-bottom:      1px solid rgba(255, 255, 255, 0.2);
+    border-bottom:      1px solid rgba(255, 255, 255, 0.5);
 }
 /* For Design Of The Mobiles */
 .mob_header{
@@ -121,7 +123,9 @@ body{
             /*  End Of The Page Menu  */
 
             /*  Start OF The Second Part */
-.about_us{
+/* .about_us{
+
+
     position:           relative;
     left:               0px;
     right:              0px;
@@ -183,4 +187,90 @@ body{
     text-decoration:        none;
     color:                  white;
     margin-left:            300px
+} */
+
+.sponPic{
+    position: relative;
+    left: 5vw;
+    width: 90vw;
+    height: 50vh;
+
+    border-radius: 30px;
+}
+
+.cont1{
+    position: relative;
+    left: 5vw;
+    margin: 0px;
+    width: 90vw;
+    height: 70vh;
+    overflow: hidden;
+    display: grid;
+    grid-column: repeat(3,10%) ;
+    
+    justify-content: center;
+    column-gap: 2vw;
+    row-gap: 10px;
+    border-radius: 25px;
+}
+
+.pharm{
+    grid-column: 1;
+}
+.calldoc{
+    grid-column: 2;
+}
+.homevisit{
+    grid-column: 3;
+}
+
+.pharm,.calldoc,.homevisit{
+    padding: 35px;
+    width: 100%;
+    background-color: #2D6EC1;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.pharm img,.calldoc img,.homevisit img{
+    width: 25vw;
+    height: 35vh;
+    border-radius: 25px;
+}
+
+.pharm h3,.calldoc h3,.homevisit h3{
+    font-size: 32px;
+    margin: 20px;
+    color: white;
+    position: relative;
+}
+
+.pharm p,.calldoc p,.homevisit p{
+    font-size: 28px;
+    margin: 20px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.pharm a,.calldoc a,.homevisit a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px;
+    position: relative;
+    top: 2vh;
+    background-color: rgb(211, 219, 255);
+
+    border-radius: 25px;
+
+    margin: 10px;
+
+    transition-duration: 0.5s;
+}
+
+.pharm a:hover,.calldoc a:hover,.homevisit a:hover{
+    background-color: #17364b;
+    color: white;
 }

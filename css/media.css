@@ -26,23 +26,23 @@
         width: 100%;
         height: 8vh;
 
-        position: absolute;
+        position: fixed;
         top: 92vh;
         background-color: black;
 
-        grid-template-areas: "log call sign";
+        grid-template-columns: 68.5px 68.5px 68.5px;
+
         justify-content: center;
         align-items: center;
-        column-gap: 18vw;
+
+        column-gap: 8vw;
 
         z-index: 100;
     }
     .mobcall ,.mobsign ,.moblog{
         color: white;
         text-decoration: none;
-
         position: relative;
-
         font-family:        'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 18px;
     }
@@ -55,7 +55,9 @@
         width: 7vw;
         position: relative;
         top: 0.2vh;
-        left: 2vw;
+    }
+    .conSign{
+        text-align: center;
     }
     /*  */
     /*  */
@@ -118,7 +120,7 @@
     /*  */
     /*  */
 
-    .about_us{
+    /* .about_us{
         position:               relative;
         padding:                0px;
         padding-top:            30px;
@@ -172,5 +174,62 @@
         color:                black;
         margin-left:            0px;
         padding-left:           260px;
+    } */
+
+    .sponPic{
+        position: relative;
+        left: 0px;
+        width: 100vw;
+        height: 25vh;
+        border-radius: 0px;
+    }
+
+    .cont1{
+        display: none;
+    }
+    .contmob1{
+        width: 100%;
+        height: 120vh;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+
+        text-align: center;
+    }
+    .pharmMob{
+        grid-row: 1;
+    }
+    .callDocMob{
+        grid-row: 2;
+    }
+    .homevisitMob{
+        grid-row: 3;
+    }
+
+    .pharmMob,.callDocMob,.homevisitMob{
+        height: 45vh;
+        margin: 2.5% 0px 2.5% 0px;
+        /* width:80vw; */
+    }
+    .pharmMob img,.callDocMob img,.homevisitMob img{
+        height: 28vh;
+        width: 80vw;
+
+    }
+    .pharmMob h3,.callDocMob h3,.homevisitMob h3{
+        font-size: 24px;
+        margin: 4px 0px 2px 0px;
+    }
+    .pharmMob p,.callDocMob p ,.homevisitMob p{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 4px 0px 10px 0px;
+    }
+    .pharmMob a,.callDocMob a ,.homevisitMob a{
+        font-size: 14px;
+        text-decoration: none;
+        color: white;
+        background-color: #17364b;
+        padding: 4px;
+        border-radius: 15px;
     }
 }
