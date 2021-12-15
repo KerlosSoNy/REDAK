@@ -189,30 +189,35 @@
     }
     .contmob1{
         width: 100%;
-        height: 45vh;
+        height: 55vh;
         display: grid;
-        grid-template-rows: repeat(3,1fr);
-        overflow: scroll;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 8vw;
+        overflow-y: hidden;
+        overflow-x: scroll;
         text-align: center;
+
+        padding: 8vw;
     }
     .pharmMob{
-        grid-row: 1;
+        grid-column: 1;
     }
     .callDocMob{
-        grid-row: 2;
+        grid-column: 2;
     }
     .homevisitMob{
-        grid-row: 3;
+        grid-column: 3;
     }
 
     .pharmMob,.callDocMob,.homevisitMob{
         height: 45vh;
+        width: 85vw;
         margin: 2.5% 0px 2.5% 0px;
         /* width:80vw; */
     }
     .pharmMob img,.callDocMob img,.homevisitMob img{
         height: 28vh;
-        width: 80vw;
+        width: 85vw;
 
     }
     .pharmMob h3,.callDocMob h3,.homevisitMob h3{
