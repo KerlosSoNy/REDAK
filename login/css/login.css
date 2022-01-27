@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(../../pic/background/body_background1.jpg);
+    background-image: url(../../pic/background/19-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -63,9 +63,8 @@ body{
     font-size: 46px;
 
     position:relative;
-    top: 38.6vh;
+    top: 40vh;
     left: 1vw;
-
 }
 
 .Patient img ,.doctor img {

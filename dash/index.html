@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <!-- <link rel='stylesheet' href='/css/boxicons.min.css'> -->
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+
+    <div class="logo-details">
+      <i class='bx bxs-ambulance' ></i>
+      <span class="logo_name">REDAK</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="javascript:void(0)" onclick="showD('home');" >
+          <i class='bx bx-home'></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="javascript:void(0)" onclick="showD('medicalH');">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">Medical History</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Medical History</a></li>
+          <li><a href="#">test1</a></li>
+          <li><a href="#">test2</a></li>
+          <li><a href="#">test3</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Appointment</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Appointment</a></li>
+          <li><a href="#">test1</a></li>
+          <li><a href="#">test1</a></li>
+          <li><a href="#">test1</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-capsule' ></i>
+          <span class="link_name">Pharmacies</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Pharmacies</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-plus-medical' ></i>
+          <span class="link_name">Hospitals</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Hospitals</a></li>
+        </ul>
+      </li>
+   
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Log out</div>
+        <div class="job">Back to the home page</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <div class = "centerLR">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Show Sidebar</span>
+    </div>
+    </div>
+
+    <div class="main-container">
+
+      <div class="cards" id ="home">
+          <div class="card card-1">
+            <!-- <div class="card_icon"><i class="fas fa-bolt"></i></div>
+            <p class="card_exit"><i class="fas fa-times"></i></p> -->
+            <div class="centerGE">
+      
+            
+            <h2 class="card_title">test</h2>
+            <!-- <p class="card_apply">
+              <a class="card_link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+            </p> -->
+          </div>
+          </div>
+          
+          <div class="card card-2">
+
+            <div class="centerGE">
+      
+            
+            <h2 class="card_title">test</h2>
+
+          </div>
+          </div>
+
+          <div class="card card-3">
+
+            <div class="centerGE">
+      
+            
+            <h2 class="card_title">test</h2>
+            <p>ssssssssssssssss</p>
+          </div>
+          </div>
+      </div>
+
+      <div class="cards" id ="medicalH">
+        <div class="card card-1">
+          <!-- <div class="card_icon"><i class="fas fa-bolt"></i></div>
+          <p class="card_exit"><i class="fas fa-times"></i></p> -->
+          <div class="centerGE">
+    
+          
+          <h2 class="card_title">test</h2>
+          <!-- <p class="card_apply">
+            <a class="card_link" href="#">Apply Now <i class="fas fa-arrow-right"></i></a>
+          </p> -->
+        </div>
+        </div>
+        
+        <div class="card card-2">
+
+          <div class="centerGE">
+    
+          
+          <h2 class="card_title">test</h2>
+
+        </div>
+        </div>
+
+        <div class="card card-3">
+
+          <div class="centerGE">
+    
+          
+          <h2 class="card_title">test</h2>
+          <p>vvvvvvvv</p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  
+   
+ 
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  //let sidebarBtn = document.querySelector(".logo-details");
+  let sidebarBtn = document.querySelector(".logo-details");
+  let sidebarBtn2 = document.querySelector(".bx-menu");
+
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  sidebarBtn2.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+    sidebar.classList.toggle("activeR");
+  });
+
+
+function showD(s){
+
+var d = document.getElementsByClassName("cards");
+
+for (i=0; i < d.length; i++){
+ 
+
+console.log(d[i])
+
+
+
+
+
+  d[i].classList.remove("active");
+
+
+    
+    
+}
+
+
+
+var ids= document.getElementById(s);
+
+
+ids.classList.add("active");
+ids.style.display = "flex";
+for (i=0; i < d.length; i++){
+
+  d[i].addEventListener("transitionend", function() {
+
+  if (this.classList.contains ("active") === false) {
+
+    this.style.display = "none";
+    
+  }
+}.bind(d[i]));
+}
+
+
+
+}
+
+
+
+
+  </script>
+</body>
+</html>

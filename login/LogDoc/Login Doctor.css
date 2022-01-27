@@ -1,0 +1,94 @@
+*{
+    box-sizing:             border-box;
+    margin:                 0px;
+    padding:                0px;
+}
+body{
+    background-image:       url(../pic/background/body_background1.jpg);
+    filter: brightness(100%);
+    background-size:        cover;
+    background-repeat:      no-repeat;
+}
+
+
+form{
+    position:               relative;
+    left:                   32%;
+    min-height:             450px;
+    max-height:             450px;
+    max-width:              fit-content;
+    min-width:              none;
+    display:                grid;
+    grid-row:               repeat(15,auto);
+    justify-content:        center;
+    align-content:          space-between;
+    background-color:       rgba(0, 0, 0, 0.8);
+    color:                  white;
+    padding:                40px;
+    margin-top:             25px;
+    border-radius:          20px;
+}
+
+h3{
+    position:               relative;
+    left:                   0px;
+    right:                  0px;
+
+    grid-row:               1;
+
+    margin-left:            auto;
+    margin-right:           auto;
+
+    font-size:              38px;
+}
+.ID{
+    grid-row:           2;
+}.Password{
+    grid-row:           3;
+}
+.ID label{
+    display: inline-block;
+}
+h3,.ID, .Password {
+    display:            block;
+    margin-bottom:      0px;
+    
+}
+h3{
+    margin-bottom:      28px;
+}
+.lab{
+    display:            block;
+
+    font-weight:        100;
+    font-size:          22px;
+
+    margin-bottom:      10px;
+}
+
+.sel{
+    display:            block;
+    width:              30vw;
+    height:             30px;
+    border-radius:      5px;
+    border:             0px;
+    padding:            2px;
+}
+.btt{
+    position:           relative;
+    left:               0px;
+    right:              0px;
+    grid-row:           15;
+
+    width:              100px;
+    height:             40px;
+
+    border-radius:      10px;
+
+    font-size:          14px;
+    font-weight:        bold;
+
+    margin-top:         30px;
+    margin-right:       auto;
+    margin-left:        auto;
+}
