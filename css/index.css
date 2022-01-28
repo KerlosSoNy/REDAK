@@ -14,14 +14,14 @@ body{
 }
 
             /*  Start Of Log In & Sign UP Icons */
-.signup , .login{
+.signup , .login ,.uppage{
     display: flex;
     justify-content:    center;
     align-items:        center;
 
     position:           fixed;
     top:                90%;
-    left:               95.8%;
+    left:               94.5%;
 
     width:              65px;
     height:             65px;
@@ -33,7 +33,7 @@ body{
 
     z-index: 5;
 
-    background-color: #783E4D;
+    background-color: #11072171;
 
     text-decoration: none;
     color:          lavenderblush;
@@ -44,17 +44,29 @@ body{
 
     padding: 15px;
 }
+
+.uppage{
+    width:              50px;
+    height:             50px;
+    padding: 8px;
+    left: 2%;
+    background-color: #773f4c75;
+}
+
 .login{
     top:                82%;
 }
-.signup img, .login img{
+.signup img, .login img, .uppage img{
     position:           relative;
     width:              50px;
     height:             50px;
 
     transform-style:    preserve-3d;
     transition-duration:3s;
-
+}
+.uppage img{
+    width:              40px;
+    height:             40px;
 }
 .login img:hover , .signup img:hover ,.login:hover ,.signup:hover{
     transform:          scale(1.2);
@@ -340,7 +352,6 @@ body{
                          "p p pic pic";
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
     align-content: center;
     position: relative;
     left: 10vw;
@@ -349,42 +360,134 @@ body{
 
     margin-bottom: 50px;
 }
-.doctors img{
+.doctors img ,.patient img{
     grid-area: pic;
     width: 45vw;
-    height: 45vh;
+    height: 50vh;
     margin: 20px;
     border-radius: 20px;
     opacity: 90%;
 }
-.doctors h1{
+.doctors h1, .patient h1{
     position: relative;
-    top: 3vh;
-    
+    top: 2vh;
+
     grid-area: h;
     color: white;
     font-size: 40px;
     font-weight: bolder;
     align-self: end;
-    justify-content: center;
+    justify-content: start;
 }
-.doctors p{
+.patient h1{
+    top: 0vh;
+    left: 1.5vw;
+}
+.doctors p, .patient p{
+    position: relative;
+    top: -4vh;
     grid-area: p;
     color: #84474F;
     font-size: 30px;
     font-weight: 700;
     align-self: center;
+    margin-left: 20px;
+}
+
+.patient p{
+    margin-left: 50px;
+    top: -10vh;
 }
 
 .more1{
     color: white;
     font-size: 20px;
     text-decoration: none;
-    
     position: relative;
     top: 3vh;
-    left: 10vw;
+    left: 20vw;
 }
+
 .more1:hover{
     cursor: pointer;
+}
+.more2{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    top: 3vh;
+    left: 20vw;
+}
+.patient{
+    display: grid;
+    grid-template-areas: "pic pic h h"
+                         "pic pic p p"
+                         "pic pic p p"
+                         "pic pic p p";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    position: relative;
+    left: 10vw;
+
+    width: 80vw;
+    height: 65vh;
+    margin-bottom: 50px;
+}
+
+.foll{
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+    height: 60vh;
+
+    margin-top: 100px;
+    display: grid;
+    grid-template-areas: "s0 s00 h s000 s0000"
+                         "s001 s1 s2 s3 s03";
+    grid-template-rows:     1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    justify-items: center;
+    align-items: center;
+}
+.foll h2{
+    grid-area: h;
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+}
+.s1{
+    grid-area: s1;
+}
+.s2{
+    grid-area: s2;
+}
+.s3{
+    grid-area: s3;
+}
+.s11 ,.s22,.s33{
+    width: 90px;
+    height: 90px;
+}
+
+.s1,.s2,.s3{
+    background-color: #773f4c75;
+    width: 250px;
+    height: 125px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.s1:hover,.s2:hover,.s3:hover{
+    cursor: pointer;
+    transition-duration: 2.5s;
+    background-color: yellow;
+    transform: scale(1.2);
 }
