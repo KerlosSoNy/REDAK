@@ -4,8 +4,7 @@
     padding:                0px;
 }
 body{
-    background-image:       url(../pic/background/body_background1.jpg);
-    filter: brightness(100%);
+    background-image:       url(../../pic/background/19-1.jpg);
     background-size:        cover;
     background-repeat:      no-repeat;
 }
@@ -13,16 +12,16 @@ body{
 
 form{
     position:               relative;
-    left:                   32%;
-    min-height:             450px;
-    max-height:             450px;
-    max-width:              fit-content;
-    min-width:              none;
+    left:                   35vw;
+    top:                    20vh;
+    height:                 50vh;
+    width:                  30vw;
+
     display:                grid;
-    grid-row:               repeat(15,auto);
+    grid-row:               repeat(5,auto);
     justify-content:        center;
     align-content:          space-between;
-    background-color:       rgba(0, 0, 0, 0.8);
+    background-color:       rgba(0, 0, 0, 0.3);
     color:                  white;
     padding:                40px;
     margin-top:             25px;
@@ -68,27 +67,43 @@ h3{
 
 .sel{
     display:            block;
-    width:              30vw;
+    width:              25vw;
     height:             30px;
     border-radius:      5px;
     border:             0px;
     padding:            2px;
 }
+.checkbox{
+    grid-row: 4;
+}
 .btt{
     position:           relative;
     left:               0px;
     right:              0px;
-    grid-row:           15;
+    grid-row:           5;
 
     width:              100px;
     height:             40px;
 
     border-radius:      10px;
-
-    font-size:          14px;
+    border:           black;
+    font-size:          18px;
     font-weight:        bold;
 
     margin-top:         30px;
     margin-right:       auto;
     margin-left:        auto;
+}
+
+.btt:hover{
+    cursor: pointer;
+    background-color: #541B3D;
+    color: white;
+    transition-duration: 1.1s;
+}
+
+.forget{
+    text-decoration: none;
+    margin-left: 13vw;
+    color: red;
 }
